@@ -1,0 +1,86 @@
+/*-----------------------------------------------------------------------------------
+
+  Theme Name: Agencyy - Creative Agency HTML Template
+  Author: ARSLY-TECH  
+  Developer: Fatema Khatun Toha 
+  Support: 
+  Description: 
+  Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+/* 
+/* 1. UTILITIES  
+/* - _variables.scss  
+/* - _typography.scss 
+/* - _mixin.scss 
+/* - _animation.scss 
+/* - _global.scss 
+/* - _theme.scss 
+/* 
+/* 2. COMPONENTS 
+/* - _button.scss 
+/* - _button-animation.scss 
+/* - _cursor.scss 
+/* - _header-top.scss 
+/* - _menu.scss 
+/* - _modal.scss 
+/* - _preloader.scss 
+/* - _scroll.scss 
+/* - _section-top.scss 
+/* 
+/* 3. HOME 1 SECTIONS 
+/* - Section 01: Project Area  
+/* - Section 02: Services Area  
+/* - Section 03: Cta Area  
+/*
+/* 4. FOOTER SYSTEM
+/* - Main Footer 
+
+
+
+/*----------------------------------------*/
+/* variable css */
+/*----------------------------------------*/
+
+// Colors
+:root {
+  --primary: rgba(26, 69, 59, 1);
+  --secondary: rgba(216, 120, 39, 1);
+  --secondary-2: rgba(153, 101, 233, 1);
+  --border: #7373733D;
+  --border-2: #FFFFFF29;
+  --bg: #161616;
+  --theme: #B6E304;
+
+  --black: #121212;
+  --black-2: #525355;
+  --white: #FFFFFF;
+  --white-2: #FFFFFF;
+  --text: #FFFFFFB2;
+}
+
+
+
+
+// Responsive Variable
+$xxxl: 'only screen and (min-width: 1920px)';
+$xxl: 'only screen and (max-width: 1919px)';
+$xl: 'only screen and (max-width: 1399px)';
+$lg: 'only screen and (max-width: 1199px)';
+$md: 'only screen and (max-width: 991px)';
+$sm: 'only screen and (max-width: 767px)';
+$xs: '(max-width: 575px)';
+
+// For Box Layout
+$bl: 'only screen and (min-width: 1600px)';
+
+
+// Responsive Variable for container
+$cxxl: '(width > 1919px)';
+$cxl: '(width > 1399px)';
+$clg: '(width > 1199px)';
+$cmd: '(width > 991px)';
+$csm: '(width > 767px)';
+$cxs: '(width > 575px)';

@@ -1,0 +1,98 @@
+/*----------------------------------------*/
+/* cursor css */
+/*----------------------------------------*/
+
+// Hide default cursor on desktop
+body {
+  cursor: none;
+
+  @media only screen and (max-width: 1024px) {
+    cursor: auto;
+  }
+}
+
+// Mouse Follower (ported from Medizen)
+.mouse-follower {
+  z-index: 99999;
+
+  // Hide on touch devices
+  @media only screen and (max-width: 1024px) {
+    display: none !important;
+  }
+
+  span {
+    z-index: 99999;
+    opacity: 1;
+    top: -10px;
+    left: -10px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    position: fixed;
+    transition: height 0.2s ease, width 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    pointer-events: none;
+  }
+
+  .cursor-outline {
+    height: 30px;
+    width: 30px;
+    border: 1.5px solid var(--primary);
+  }
+
+  .cursor-dot {
+    height: 8px;
+    width: 8px;
+    background: var(--secondary);
+  }
+
+  // Hide cursor when over links / buttons
+  &.hide-cursor {
+    span {
+      border-color: transparent;
+      background: transparent;
+    }
+  }
+
+  // Magnify effect on headings (mix-blend-mode: difference creates inversion)
+  &.highlight-cursor-head {
+    cursor: none;
+
+    .cursor-outline {
+      height: 0;
+      width: 0;
+    }
+
+    .cursor-dot {
+      height: 120px;
+      width: 120px;
+      background: #fff;
+      mix-blend-mode: difference;
+
+      @media only screen and (max-width: 1200px) {
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
+
+  // Softer effect on paragraphs
+  &.highlight-cursor-para {
+    cursor: none;
+
+    .cursor-outline {
+      height: 0;
+      width: 0;
+    }
+
+    .cursor-dot {
+      height: 70px;
+      width: 70px;
+      background: #fff;
+      mix-blend-mode: difference;
+
+      @media only screen and (max-width: 1024px) {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+}
