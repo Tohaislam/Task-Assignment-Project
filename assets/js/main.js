@@ -1262,7 +1262,6 @@
 
 
 
-
   // Image Cliping Effect
   document.addEventListener("DOMContentLoaded", () => {
     const initialClipPaths = [
